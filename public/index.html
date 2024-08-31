@@ -5,6 +5,53 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Share Boost</title>
+      <style>
+        
+      
+			  
+			   .floating-instruction {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #333;
+            border: 3px solid white;
+           width: 300px;
+           height: 200px;
+            
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            z-index: 9999;
+        }
+
+        .close-button {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            cursor: pointer;
+            color: white; 
+            box-shadow: 2px 5px 5px white;
+        }
+			  
+			  .close-button:hover {
+			    background-color: red;
+			  }
+			  .feedb {
+			    color: white;
+			    font-size: 21px;
+			    text-align: center;
+			  }
+			  
+			  
+        .cp {
+            text-align: center;
+            margin-top: 5px;
+            color: white;
+          
+        }
+
+			</style>
+        
+      
    </head>
    <body>
       <div class="wrapper-container">
@@ -48,8 +95,21 @@
             <h1>SHARE BOOST</h1>
             <h4>ABOUT US</h4>
             <p>You can find our open-source repository <a href="https://www.pornhub.com" style="text-decoration: none; color: blue;">here</a>, encouraging developers to contribute, learn, and customize the website</p>
+            
+              <div class="cp">
+    <p>&copy;2024 | Kenneth | All rights reserved</p>
+    </div>
+            
+            
+            			
+<div class="floating-instruction">
+        <p class="feedb">Hey👋 Would you like to donate us we accept gcash/regular load❤ any amount will be Highly appreciated <br> num-09639095759 <br>Thank You So Much. </p>
+        
+        <span class="close-button" onclick="closeInstruction()">X</span>
+</div>
          </div>
       </div>
+      
       <style>
          body, html {
          margin: 0;
@@ -58,7 +118,7 @@
          padding: 20px;
          font-family: 'Poppins', sans-serif;
          background: #000;
-         color: #898989;
+         color: red;
          display: flex;
          justify-content: center;
          align-items: center;
@@ -124,7 +184,6 @@
          margin-bottom: 10px;
          overflow: auto;
          white-space: nowrap; 
-         }
       </style>
       <script>
          async function submitForm() {
@@ -220,8 +279,14 @@
            container.textContent = `${index + 1}. ID: ${id} | ${count}/${target}`;
          }
          
-         linkOfProcessing();
-         
+      </script>
+      
+      <script>
+        
+        function closeInstruction() {
+            var instruction = document.querySelector('.floating-instruction');
+            instruction.style.display = 'none';
+        }
       </script>
    </body>
-</html>
+   </html>
